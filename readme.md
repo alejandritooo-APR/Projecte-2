@@ -1,0 +1,1 @@
+Aquest projecte tracta sobre fer una maquina -arcade-, on podrem jugar a diferents jocs, com ara: el janken i endivinar el número. 
