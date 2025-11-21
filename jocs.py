@@ -8,8 +8,13 @@ def janken():
         print("Has triat la modalitat fàcil, anem a començar el joc")
         objectes = input ("Escolleig entre 1:Pedra 2:Tissora 3:Paper;  ")
         if objectes == 1:
-    if nombre == 2:
-        print("Has triat la modalitat difícil, anem a començar el joc")
+            print("Has triat Pedra")    
+        elif objectes == 2:
+            print("Has triat Tissora")
+        elif objectes == 3:
+            print("Has triat Paper")       
+        if nombre == 2:
+         print("Has triat la modalitat difícil, anem a començar el joc")
         objectes = input ("Escolleig entre 1:Pedra 2:Tissora 3:Paper;  ")
 
 
