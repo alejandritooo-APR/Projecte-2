@@ -3,53 +3,50 @@ import random
 
 def janken():
     print("Benvingut a la meva maquina Janken, a continuació et mostrare diferents nombres per poder triar entres les diferents modalitats")
-    nombre = input("Tria un dels següents nombres per poder començar el joc: 1: (Nivell fàcil) És jugaran tres rondes. 2: (Difícl) Al millor de 5 rondes")
+    nombre = input("Tria un dels següents nombres per poder començar el joc: 1: (Nivell fàcil) És jugaran tres rondes. 2: (Difícl) Al millor de 5 rondes;   ")
     if nombre == 1:
         print("Has triat la modalitat fàcil, anem a començar el joc")
-        objectes = input("Escolleig entre pedra,paper,tisora;  ")
-        if objectes == pedra:
+        usuari = input("Escolleig entre pedra,paper,tisora;  ")
+        if usuari == "pedra":
             print("Has triat Pedra")    
-        elif objectes == paper:
+        elif usuari == "paper":
             print("Has triat paper")
-        elif objectes == tisora:
+        elif usuari == "tisora":
             print("Has triat tisora")
-    maquina = random.choice[pedra, paper, tisora]
-    print("La maquina ha triat: ", maquina)
-    usuari = objectes
-    if usuari == pedra and maquina == tisora:
+    if usuari == "pedra" and maquina == "tisora":
         print("Has guanyat")
-    elif usuari == pedra and maquina == paper:      
+    elif usuari == "pedra" and maquina == "paper":      
         print("Has perdut")
-    elif usuari == paper and maquina == pedra:
+    elif usuari == "paper" and maquina == "pedra":
         print("Has guanyat")
-    elif usuari == paper and maquina == tisora:
+    elif usuari == "paper" and maquina == "tisora":
         print("Has perdut")
-    elif usuari == tisora and maquina == paper:
+    elif usuari == "tisora" and maquina == "paper":
         print("Has guanyat")
-    elif usuari == tisora and maquina == pedra:
+    elif usuari == "tisora" and maquina == "pedra":
         print("Has perdut")  
          
     if nombre == 2:
         print("Has triat la modalitat difícil, anem a començar el joc")
         objectes = input("Escolleig entre pedra,paper,tisora;  ")       
-        if objectes == pedra:
+        if objectes == "pedra":
                 print("Has triat Pedra")
-        elif objectes == paper:
+        elif objectes == "paper":
                 print("Has triat paper")
-        elif objectes == tisora:
+        elif objectes == "tisora":
                 print("Has triat tisora")
-        maquina = random.choice(pedra, paper, tisora)
+        maquina = random.choice("pedra", "paper", "tisora")
         print("La maquina ha triat: ", maquina)
         usuari = objectes
-        if usuari == pedra and maquina == tisora:
+        if usuari == "pedra" and maquina == "tisora":
                 print("Has guanyat")
-        elif usuari == pedra and maquina == paper:
+        elif usuari == "pedra" and maquina == "paper":
                 print("Has perdut")
-        elif usuari == paper and maquina == pedra:
+        elif usuari == "paper" and maquina == "pedra":
                 print("Has guanyat")
-        elif usuari == paper and maquina == tisora:
+        elif usuari == "paper" and maquina == "tisora":
                 print("Has perdut")
-        elif usuari == tisora and maquina == paper:
+        elif usuari == "tisora" and maquina == "paper":
                 print("Has guanyat")
-        elif usuari == tisora and maquina == pedra:
+        elif usuari == "tisora" and maquina == "pedra":
                 print("Has perdut")
