@@ -12,9 +12,44 @@ def janken():
         elif objectes == paper:
             print("Has triat paper")
         elif objectes == tisora:
-            print("Has triat tisora")       
+            print("Has triat tisora")
+    maquina = random.choice(pedra, paper, tisora)
+    print("La maquina ha triat: ", maquina)
+    usuari = objectes
+    if usuari == pedra and maquina == tisora:
+        print("Has guanyat")
+    elif usuari == pedra and maquina == paper:      
+        print("Has perdut")
+    elif usuari == paper and maquina == pedra:
+        print("Has guanyat")
+    elif usuari == paper and maquina == tisora:
+        print("Has perdut")
+    elif usuari == tisora and maquina == paper:
+        print("Has guanyat")
+    elif usuari == tisora and maquina == pedra:
+        print("Has perdut")  
+         
     if nombre == 2:
-         print("Has triat la modalitat difícil, anem a començar el joc")
-        objectes = input ("Escolleig entre 1:Pedra 2:Tissora 3:Paper;  ")
-
-
+        print("Has triat la modalitat difícil, anem a començar el joc")
+        objectes = input("Escolleig entre pedra,paper,tisora;  ")       
+        if objectes == pedra:
+                print("Has triat Pedra")
+        elif objectes == paper:
+                print("Has triat paper")
+        elif objectes == tisora:
+                print("Has triat tisora")
+        maquina = random.choice(pedra, paper, tisora)
+        print("La maquina ha triat: ", maquina)
+        usuari = objectes
+        if usuari == pedra and maquina == tisora:
+                print("Has guanyat")
+        elif usuari == pedra and maquina == paper:
+                print("Has perdut")
+        elif usuari == paper and maquina == pedra:
+                print("Has guanyat")
+        elif usuari == paper and maquina == tisora:
+                print("Has perdut")
+        elif usuari == tisora and maquina == paper:
+                print("Has guanyat")
+        elif usuari == tisora and maquina == pedra:
+                print("Has perdut")
