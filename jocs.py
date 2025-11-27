@@ -13,7 +13,7 @@ def janken():
             print("Has triat paper")
         elif objectes == tisora:
             print("Has triat tisora")
-    maquina = random.choice(pedra, paper, tisora)
+    maquina = random.choice[pedra, paper, tisora]
     print("La maquina ha triat: ", maquina)
     usuari = objectes
     if usuari == pedra and maquina == tisora:
