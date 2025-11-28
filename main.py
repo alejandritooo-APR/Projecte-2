@@ -12,3 +12,4 @@ elif usuari == "2":
     endivinar_num()
 else:
     print("Opció no vàlida. Intenta-ho de nou.")
+

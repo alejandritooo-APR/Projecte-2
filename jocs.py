@@ -1,4 +1,4 @@
-from robot import robot
+import robot                                                    
 import random
 
 def janken():
@@ -7,12 +7,8 @@ def janken():
     if usuari == 1:
         print("Has triat la modalitat fàcil, anem a començar el joc")
         usuari = input("Escolleig entre pedra,paper,tisora;  ")
-        if usuari == "pedra":
-            print("Has triat Pedra")    
-        elif usuari == "paper":
-            print("Has triat paper")
-        elif usuari == "tisora":
-            print("Has triat tisora")
+    r = robot.playing()
+    robot = random.choice(["pedra", "paper", "tisora"])
     if usuari == "pedra" and robot == "tisora":
         print("Has guanyat")
     elif usuari == "pedra" and robot == "paper":      
@@ -25,8 +21,8 @@ def janken():
         print("Has guanyat")
     elif usuari == "tisora" and robot == "pedra":
         print("Has perdut")  
+    r = robot.playing()
     robot = random.choice(["pedra", "paper", "tisora"])
-    robot.playing()
     if usuari == 2:
         print("Has triat la modalitat difícil, anem a començar el joc")
         objectes = input("Escolleig entre pedra,paper,tisora;  ")       
@@ -36,7 +32,6 @@ def janken():
                 print("Has triat paper")
         elif objectes == "tisora":
                 print("Has triat tisora")
-        maquina = random.choice("pedra", "paper", "tisora")
         print("La maquina ha triat: ", maquina)
         usuari = objectes
         if usuari == "pedra" and maquina == "tisora":
