@@ -3,7 +3,7 @@ import random
 
 def janken():
     print("Benvingut a la meva maquina Janken, a continuació et mostrare diferents nombres per poder triar entres les diferents modalitats")
-    usuari = input("Tria un dels següents nombres per poder començar el joc: 1: (Nivell fàcil) És jugaran tres rondes. 2: (Difícl) Al millor de 5 rondes;   ")
+    usuari = input("Tria un dels següents nombres per poder començar el joc: 1: (Nivell fàcil) És jugaran tres rondes. 2: (Difícl) Al millor de 5 rondes;")
     if usuari == 1:
         print("Has triat la modalitat fàcil, anem a començar el joc")
         usuari = input("Escolleig entre pedra,paper,tisora;  ")
@@ -25,7 +25,8 @@ def janken():
         print("Has guanyat")
     elif usuari == "tisora" and robot == "pedra":
         print("Has perdut")  
-    robot.playing(self)   # type: ignore
+    robot = random.choice(["pedra", "paper", "tisora"])
+    robot.playing()
     if usuari == 2:
         print("Has triat la modalitat difícil, anem a començar el joc")
         objectes = input("Escolleig entre pedra,paper,tisora;  ")       
