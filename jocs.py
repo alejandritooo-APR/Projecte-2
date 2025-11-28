@@ -6,7 +6,7 @@ def janken():
     nombre = input("Tria un dels següents nombres per poder començar el joc: 1: (Nivell fàcil) És jugaran tres rondes. 2: (Difícl) Al millor de 5 rondes;   ")
     if nombre == 1:
         print("Has triat la modalitat fàcil, anem a començar el joc")
-        usuari = input("Escolleig entre pedra,paper,tisora;  ")
+        usuari = input("        Escolleig entre pedra,paper,tisora;  ")
         if usuari == "pedra":
             print("Has triat Pedra")    
         elif usuari == "paper":
