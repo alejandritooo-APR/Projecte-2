@@ -25,7 +25,7 @@ def janken():
         print("Has guanyat")
     elif usuari == "tisora" and robot == "pedra":
         print("Has perdut")  
-    robot.playing()  
+    robot.playing(self)   # type: ignore
     if usuari == 2:
         print("Has triat la modalitat difícil, anem a començar el joc")
         objectes = input("Escolleig entre pedra,paper,tisora;  ")       
